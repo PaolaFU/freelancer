@@ -1,3 +1,32 @@
 /*
  * Estilos de tu proyecto
  */
+ *{
+
+ }
+
+ body{
+   box-sizing: border-box;
+   margin: 0;
+ }
+
+ header{
+   /*text-align: center;*/
+ }
+ li {
+   text-decoration: none;
+   list-style: none;
+ }
+.bootstrap{
+  margin-left: 238px;
+}
+ a{
+   text-decoration: none;
+ }
+
+.menutop{
+  display: inline-block;
+}
+.menuleft{
+  margin-right: 20px;
+}
