@@ -1,91 +1,93 @@
 /*
  * Estilos de tu proyecto
  */
+ /*para limpiar toda la pagina*/
  *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
  }
-
+/*Para colocar el alto, ancho y color de la caja  que tiene la clase container  y que pertenece  nav*/
  .container {
-   height: 106px;
+   height: 107px;
    width: 100%;
    background-color: #2c3e50;
-   /*position: relative;*/
    position: fixed;
+   z-index: 1000;
+   /*display: inline-block;*/
 
  }
+ /* Todos los estilos que se le aplica a todos los <a>*/
  .container a{
 
    font-weight: bold;
    text-decoration: none;
    text-transform: uppercase;
    font-family: 'Montserrat', sans-serif;
-   font-weight: bold;
-   text-transform: uppercase;
    color: white;
  }
+ /*Estilos para el titulo de la  izquierda START BOOTSTRAP: tamaño, alineado y que se comporte inline block */
  .bootstrap{
-   display: inline-block;
-   margin-top: 30px;
-   margin-left: 128px;
+   /*display: inline-block;*/
+   margin-top: 35px;
+   margin-left: 120px;
+   font-size: 32px;
+
  }
 
-.bootstrap a{
-  text-align: left;
-  font-size: 30px;
-}
-.menuright{
-   /*position: relative;
-   left: 20px;*/
-   list-style: none;
-   transform: translateY(160%);
-   float: right;
-   padding-right: 127px;
-}
 
+/*los estilos que tendra el menu de la izquierda*/
+.menuright{
+   /* list-style:none para quitarle el estilo de lista con viñetas*/
+   list-style: none;
+   transform: translateY(-120%);
+   float: right;
+   padding-right: 115px;
+  /* width: 440px;
+   margin-left: 870px;*/
+   line-height: 30px;
+   /*display: inline-block;*/
+}
+/*cada li se comporte inline-block  */
 .menuright li{
+  /*Separacion entre cada palabra*/
   margin-right: 20px;
   display: inline-block;
-
-
-}
- .container .menuright li a {
-   text-decoration: none;
-   font-size: 16px;
-   line-height: 24px;
+  font-size: 16px;
 
 }
 
 /*nav*/
+/* estilo de la caja de part1*/
 .part1{
   background-color: #18bc9c;
-  height: 685px;
+  height: 775px;
   width: 100%;
   text-align: center;
 
 }
 img{
-  margin-top: 194px;
+  margin-top: 200px;
 }
 
 .name{
-  font-size: 52px;
-  margin-top: 64px;
-
+  font-size: 51px;
+  margin-top: 24px;
   line-height: 114px;
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
+.star{
+  line-height: 55px;
+}
 .star i{
    color: white;
+
 }
-
-
 .star::before {
 content: "";
 display: inline-block;
-width: 80px;
+width: 96px;
 height: 5px;
 margin-right: 7px;
 background-color: white;
@@ -97,9 +99,76 @@ transform: translateY(-165%);
 content: "";
 display: inline-block;
 margin-left: 5px;
-width:80px;
+width:96px;
 height: 5px;
 background-color: white;
-/*vertical-align: middle;*/
 transform: translateY(-165%);
+}
+
+.skills h3{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+/*----------------part2------------*/
+
+/*Estilos de la caja que contiene toda la seccion 2*/
+ .part2{
+  /*outline: 2px solid red;*/
+  text-align: center;
+  width: 100%;
+}
+/*estilos al subtitulo portfolio*/
+div h2{
+  text-transform: uppercase;
+  margin-top: 95px;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #212529;
+}
+/*dibujar la linea antes de la estrella*/
+.star1::before {
+content: "";
+display: inline-block;
+width: 96px;
+height: 5px;
+margin-right: 7px;
+background-color: #2c3e50;;
+transform: translateY(-165%);
+}
+.star1{
+  margin-top: 15px;
+
+}
+.star1 i{
+  color: #2c3e50;
+}
+/*dibujar la linea despues de la estrella*/
+.star1::after {
+content: "";
+display: inline-block;
+margin-left: 5px;
+width:96px;
+height: 5px;
+background-color: #2c3e50;;
+transform: translateY(-165%);
+}
+
+figure  {
+
+ /*background-color: salmon;*/
+ display: inline-block;
+ position: relative;
+
+}
+figure a img{
+  margin-right: 29px;  /*seperacion horizontal entre figura*/
+  margin-top: 18px;/*seperacion vertical entre figura*/
+  width: 352px;/*tamaño de cada imagen*/
+  height: 253px;
 }
