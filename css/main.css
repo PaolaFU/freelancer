@@ -5,10 +5,11 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+
  }
 /*Para colocar el alto, ancho y color de la caja  que tiene la clase container  y que pertenece  nav*/
  .container {
-   height: 107px;
+  /* height: 107px;*/
    width: 100%;
    background-color: #2c3e50;
    position: fixed;
@@ -33,11 +34,15 @@
  }
 
 /*los estilos que tendra el menu de la izquierda*/
+
+.menuright a:hover{
+  color: #18bc9c;
+}
 .menuright{
    list-style: none;/* list-style:none para quitarle el estilo de lista con viñetas*/
    transform: translateY(-120%);
    float: right;
-   padding-right: 115px;
+   padding-right: 102px;
    /*width: 440px;
    margin-left: 870px;*/
    line-height: 30px;
@@ -45,16 +50,17 @@
 }
 /*cada li se comporte inline-block  */
 .menuright li{
-  margin-right: 20px;/*Separacion entre cada palabra*/
+  margin-right: 16px;/*Separacion entre cada palabra*/
   display: inline-block;
   font-size: 16px;
+  letter-spacing:1px;
 }
 
 /*------------------------section: part1------------------------------*/
 /* estilo de la caja de part1*/
 .part1{
   background-color: #18bc9c;
-  height: 775px;
+  /*height: 77.5%;*/
   width: 100%;
   text-align: center;
 
@@ -70,13 +76,7 @@ img{
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
-.star{
-  line-height: 55px;
-}
-.star i{
-   color: white;
 
-}
 .star::before {
   content: "";
   display: inline-block;
@@ -85,6 +85,13 @@ img{
   margin-right: 7px;
   background-color: white;
   transform: translateY(-165%);
+}
+.star{
+  line-height: 55px;
+}
+.star i{
+   color: white;
+
 }
 
 .star::after {
@@ -103,6 +110,7 @@ img{
   font-size: 28px;
   font-weight: 300;
   font-style: normal;
+  padding-bottom: 107px;
 
 }
 
@@ -113,49 +121,197 @@ img{
   /*outline: 2px solid red;*/
   text-align: center;
   width: 100%;
+  /*height: 883px;*/
 }
 /*estilos al subtitulo portfolio*/
 div h2{
   text-transform: uppercase;
-  margin-top: 95px;
+  padding-top:  95px;
   font-size: 48px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #212529;
 }
 /*dibujar la linea antes de la estrella*/
-.star1::before {
-  content: "";
+.part2 .star::before {
+  background-color: #212529;
+}
+.part2 .star i{
+  color: #212529;
+}
+/*dibujar la linea despues de la estrella*/
+.part2 .star::after {
+ background-color: #212529;
+}
+.part2 figure  {
+  /*background-color: salmon;*/
   display: inline-block;
-  width: 96px;
-  height: 5px;
-  background-color: #2c3e50;;
-  transform: translateY(-165%);
+  padding-left: 8px;
+  /*position: relative;*/
 }
-.star1{
-  margin-top: 15px;
+figure a img{
+  margin-right: 20px;  /*seperacion horizontal entre figura*/
+  margin-top: 18px;/*seperacion vertical entre figura*/
+  width: 349px;/*tamaño de cada imagen*/
+  height: 253px;
+  background-color: red;
+  image:url(assets/images/lupa.png);
+  background-size: 15%;
+  background-repeat:no-repeat;
+  background-position: center;
 }
-.star1 i{
+.part2 figure a:hover{
+    background-color: red;
+    opacity:0.1;
+
+}
+/*-------------------section: part3-------------------------*/
+.part3{
+  background-color: #18bc9c;
+  /*height: 577px;*/
+  width: 100%;
+  text-align: center;
+  margin-top: 130px;/*Separarlo de section:part2*/
+  padding-bottom: 102px;
+
+
+}
+/*para la palabra about*/
+.part3 div h2{
+  padding-top: 112px;
+  color: white;
+
+}
+
+.part3 .star::before {
+
+  background-color: white;
+
+}
+
+.part3 .star i{
+  color: white;
+}
+/*dibujar la linea despues de la estrella*/
+.part3 .star::after {
+
+  background-color: white;
+
+}
+/*estilo del parrafo*/
+.columns p{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  color: white;
+  text-align: left;
+}
+.part3 .columns{
+  text-align: left;
+  /*outline: 2px solid red;*/
+  /*width: 732px;
+  height: 180px;*/
+  margin-left:  311px;
+  margin-right: 311px;
+  display: inline-block;
+}
+/*para ponerlo el parrafo en 2 columnas*/
+.columns p{
+  column-count: 2;
+  padding-top: 10px;
+}
+/*estilo boton download*/
+.button {
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 3px 2px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  border-radius: 4px;
+  margin-top: 37px;
+}
+/*para cambiar a blanco y letras verdes al hacer click*/
+.button:hover{
+  background-color: white;
+  color: #18bc9c;
+}
+/*para mover el icono de download*/
+a i{
+  padding-right: 3px;
+}
+/*----------------------------------part4--------------------------------*/
+.part4{
+  text-align: center;
+  padding-bottom: 118px;
+}
+.part4 .star::before {
+
+  background-color: #2c3e50;
+
+}
+.part4 .star i{
   color: #2c3e50;
 }
 /*dibujar la linea despues de la estrella*/
-.star1::after {
-  content: "";
-  display: inline-block;
-  margin-left: 5px;
-  width:96px;
-  height: 5px;
-  background-color: #2c3e50;;
-  transform: translateY(-165%);
+.part4 .star::after {
+  background-color: #2c3e50;
 }
-figure  {
-  /*background-color: salmon;*/
-  display: inline-block;
-  position: relative;
+/*formulario */
+input[type=text], select {
+    width: 50%;
+    display: inline-block;
+    border: none;
+    padding-bottom: 60px;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+    font-size: 24px;
+    text-decoration: none;
 }
-figure a img{
-  margin-right: 29px;  /*seperacion horizontal entre figura*/
-  margin-top: 18px;/*seperacion vertical entre figura*/
-  width: 352px;/*tamaño de cada imagen*/
-  height: 253px;
+
+#message{
+    padding-bottom:  120px;
+}
+.part4 .button{
+
+  color: white;
+  background-color: #18bc9c;
+
+}
+/*--------footer---------*/
+.boxfooter{
+  width: 100%;
+  height: 343px;
+  background-color: #2c3e50;
+  padding-top: 50px;
+  display: inline-block;
+}
+
+.boxleft{
+
+  color: white;
+  margin-left: 190px;
+  width: 210px;
+  text-align: center;
+  margin-right: 2px;
+
+}
+.boxleft h3{
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+.boxleft p{
+  padding-top: 40px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+  font-family: 'Lato', sans-serif;
 }
