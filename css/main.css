@@ -143,6 +143,10 @@ div h2{
 .part2 .star::after {
  background-color: #212529;
 }
+.part2 .figures{
+  width: 90%;
+  margin: auto;
+}
 .part2 figure  {
   /*background-color: salmon;*/
   display: inline-block;
@@ -264,54 +268,110 @@ a i{
 }
 /*formulario */
 input[type=text], select {
-    width: 50%;
-    display: inline-block;
-    border: none;
-    padding-bottom: 60px;
-    font-family: 'Lato', sans-serif;
-    line-height: 30px;
-    font-size: 24px;
-    text-decoration: none;
-}
+  width: 50%;
+  display: inline-block;
+  border: none;
+  padding-bottom: 60px;
+  font-family: 'Lato', sans-serif;
+  line-height: 30px;
+  font-size: 24px;
+  text-decoration: none;
+  outline-style: none;
+  border-bottom: 2px solid #ddd;
 
+}
 #message{
     padding-bottom:  120px;
 }
 .part4 .button{
-
   color: white;
   background-color: #18bc9c;
+  margin-right: 700px;
+  border-radius: 8px;
 
 }
-/*--------footer---------*/
+.part4 .button:hover{
+  background-color: #006633;
+}
+
+/*footer*/
+/*Estilos del contenedor footer*/
+footer{
+    position: relative;
+    color: white;
+    background-color:#2c3e50;
+    padding:55px 80px 30px 80px;
+    width:100%;
+    overflow:auto;
+}
+/*Dividirlo en 3 yq se acomode al centro*/
 .boxfooter{
-  width: 100%;
-  height: 343px;
-  background-color: #2c3e50;
-  padding-top: 50px;
-  display: inline-block;
+    column-count:3;
+    width: 90%;
+    margin: auto;
+}
+.box{
+    float: left;
+    text-align:center;
+}
+/*los estilos de los 3 h3 que hay  en footer  en una sola clase titles*/
+.titles {
+    font-size:25px;
+    padding-bottom: 26px;
+    letter-spacing:2px;
+
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin: auto;
+}
+/*estilos para los pde footer*/
+.box p{
+    font-size:20px;
+    line-height:30px;
+    font-family: 'Lato', sans-serif;
 }
 
-.boxleft{
+.box ul li{
+    display: inline-block;
+    padding-top:10px;
+}
+/*estilos de los cinco iconos de footer*/
+.buttons{
+    font-size:20px;margin-top:15px;
+    border:solid 2px #fff;
+    text-align:center;
+    border:2px solid #fff;
+    border-radius:100%;
+    display: inline-block;
+    color:white;
+    padding:10px;
+}
+/*para cambiar el fondo al pasar el mouse*/
+.buttons:hover{
+    color:#18bc9c;
+    border:solid 2px #fff;
+    background:#fff;
+    transition-duration:1s;
+  }
+  /*unca clase para eñ copyright al final de la pagina */
+.down{
+    margin-top: 120px;
+    position: relative;
+    left:50%;
+    transform:translateX(-14%);
+    padding-left: 30px;
+    font-family: 'Lato', sans-serif;
 
-  color: white;
-  margin-left: 190px;
-  width: 210px;
-  text-align: center;
-  margin-right: 2px;
-
 }
-.boxleft h3{
-  font-size: 28px;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 34px;
-  text-transform: uppercase;
-}
-.boxleft p{
-  padding-top: 40px;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: normal;
-  font-family: 'Lato', sans-serif;
-}
+/*para cambiar y mandar un enlaze a un p de la ultima columna*/
+.box p a{
+    color: #18bc9c;
+    text-decoration:none;
+  }
+.box p a:hover{
+    color: #18bc9c;
+    text-decoration:underline;
+  }
